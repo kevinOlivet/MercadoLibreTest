@@ -1,0 +1,26 @@
+[
+  {
+    "id": "288",
+    "name": "Tarjeta Shopping",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/288.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/288.gif",
+    "processing_mode": "aggregator",
+    "merchant_account_id": null
+  },
+  {
+    "id": "279",
+    "name": "Banco Galicia",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/279.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/279.gif",
+    "processing_mode": "aggregator",
+    "merchant_account_id": null
+  },
+  {
+    "id": "1026",
+    "name": "Banco Industrial",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/1026.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/1026.gif",
+    "processing_mode": "aggregator",
+    "merchant_account_id": null
+  }
+]
