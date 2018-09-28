@@ -39,6 +39,7 @@
 		2DBFA11A21357ECF00DB71E4 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBFA11921357ECF00DB71E4 /* Networker.swift */; };
 		2DBFA11C2135AD6F00DB71E4 /* BankSelectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBFA11B2135AD6F00DB71E4 /* BankSelectModel.swift */; };
 		2DBFA11E2135B91700DB71E4 /* CuotasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBFA11D2135B91700DB71E4 /* CuotasModel.swift */; };
+		2DD1EC97215D3B45003ABF58 /* TextValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD1EC96215D3B45003ABF58 /* TextValidation.swift */; };
 		2DD3BCC32136DD7700D3F526 /* PaymentMethodPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3BCC22136DD7700D3F526 /* PaymentMethodPresenter.swift */; };
 		2DD3BCC52136DD8A00D3F526 /* PaymentMethodRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3BCC42136DD8A00D3F526 /* PaymentMethodRepo.swift */; };
 		2DD720F22138252B006B1310 /* EnterAmountViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD720F12138252B006B1310 /* EnterAmountViewControllerTests.swift */; };
@@ -135,6 +136,7 @@
 		2DBFA11921357ECF00DB71E4 /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		2DBFA11B2135AD6F00DB71E4 /* BankSelectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankSelectModel.swift; sourceTree = "<group>"; };
 		2DBFA11D2135B91700DB71E4 /* CuotasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuotasModel.swift; sourceTree = "<group>"; };
+		2DD1EC96215D3B45003ABF58 /* TextValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextValidation.swift; sourceTree = "<group>"; };
 		2DD3BCC22136DD7700D3F526 /* PaymentMethodPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodPresenter.swift; sourceTree = "<group>"; };
 		2DD3BCC42136DD8A00D3F526 /* PaymentMethodRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodRepo.swift; sourceTree = "<group>"; };
 		2DD720F12138252B006B1310 /* EnterAmountViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterAmountViewControllerTests.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 				2DBFA11321357AFD00DB71E4 /* Alerts.swift */,
 				2DBFA11521357B4900DB71E4 /* String+Extensions.swift */,
 				2D9EAE842137349B00D6B644 /* UIViewController+Extensions.swift */,
+				2DD1EC96215D3B45003ABF58 /* TextValidation.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -630,6 +633,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DD1EC97215D3B45003ABF58 /* TextValidation.swift in Sources */,
 				2DBFA11621357B4900DB71E4 /* String+Extensions.swift in Sources */,
 				2DBFA1102135749000DB71E4 /* CuotasViewController.swift in Sources */,
 				2D9EAE852137349B00D6B644 /* UIViewController+Extensions.swift in Sources */,

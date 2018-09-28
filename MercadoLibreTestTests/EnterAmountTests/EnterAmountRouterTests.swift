@@ -47,4 +47,9 @@ class EnterAmountRouterTests: XCTestCase {
         enterAmountRouter.showCatchCuotaAlert(finalMessage: "Test")
         XCTAssert(viewController.presentedViewController is UIAlertController)
     }
+
+    func testShowNumberToUseAlert() {
+        enterAmountRouter.showNumberToUseAlert(message: "Test")
+        XCTAssert(viewController.presentedViewController is UIAlertController)
+    }
 }

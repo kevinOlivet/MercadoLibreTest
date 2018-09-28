@@ -28,8 +28,16 @@ class EnterAmountPresenter: EnterAmountPresenterProtocol {
 
     func handleNextButtonTapped(amountEntered: String) {
         if !amountEntered.isEmpty {
-            if let amountEntered = Int(amountEntered) {
-                router.showPaymentMethod(amountEntered: amountEntered)
+            let validator = NumericValidation.sharedInstance
+            if validator.validateString(str: amountEntered) {
+                if let amountEntered = Int(amountEntered) {
+                    router.showPaymentMethod(amountEntered: amountEntered)
+                }
+            } else {
+                let numberToUse = validator.getMatchingString(str: amountEntered)
+                view?.setTextFieldWithRegexNumber(numberToUse: numberToUse!)
+                print("Here: ", numberToUse!)
+                router.showNumberToUseAlert(message: validator.validationMessage)
             }
         } else {
             router.showEnterAmountAlert()

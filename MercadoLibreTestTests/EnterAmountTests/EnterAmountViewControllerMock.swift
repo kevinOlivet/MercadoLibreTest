@@ -18,6 +18,10 @@ class EnterAmountViewControllerMock: EnterAmountViewControllerProtocol {
     func catchCuota(notification: Notification) {
         catchCuotaCalled = true
     }
+    var setTextFieldWithRegexNumberCalled = false
+    func setTextFieldWithRegexNumber(numberToUse: String) {
+        setTextFieldWithRegexNumberCalled = true
+    }
     var nextButtonTappedCalled = false
     func nextButtonTapped(_ sender: Any) {
         nextButtonTappedCalled = true

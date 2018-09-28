@@ -51,6 +51,10 @@ class EnterAmountPresenterTests: XCTestCase {
 
         XCTAssertTrue(mockRouter.showCatchCuotaAlertCalled)
     }
+    func testHandleNextButtonTappedTooManyNumbers() {
+        presenterUnderTest.handleNextButtonTapped(amountEntered: "1234567")
+        XCTAssertTrue(mockRouter.showNumberToUseAlertCalled)
+    }
     func testNotifications() {
         var finalMessage: String?
         let notificationName = Notification.Name(rawValue: "cuotasFinishedNotification")

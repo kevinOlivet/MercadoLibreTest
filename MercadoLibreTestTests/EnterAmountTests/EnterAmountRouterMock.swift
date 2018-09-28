@@ -10,7 +10,6 @@ import Foundation
 @testable import MercadoLibreTest
 
 class EnterAmountRouterMock: EnterAmountRouterProtocol {
-
     var showPaymentMethodCalled = false
     func showPaymentMethod(amountEntered: Int) {
         showPaymentMethodCalled = true
@@ -22,5 +21,9 @@ class EnterAmountRouterMock: EnterAmountRouterProtocol {
     var showCatchCuotaAlertCalled = false
     func showCatchCuotaAlert(finalMessage: String) {
         showCatchCuotaAlertCalled = true
+    }
+    var showNumberToUseAlertCalled = false
+    func showNumberToUseAlert(message: String) {
+        showNumberToUseAlertCalled = true
     }
 }

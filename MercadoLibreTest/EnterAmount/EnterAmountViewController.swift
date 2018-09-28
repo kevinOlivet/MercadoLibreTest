@@ -11,6 +11,7 @@ import UIKit
 protocol EnterAmountViewControllerProtocol: class {
     func setUpUI()
     func catchCuota(notification: Notification)
+    func setTextFieldWithRegexNumber(numberToUse: String)
     func nextButtonTapped(_ sender: Any)
 }
 
@@ -40,6 +41,10 @@ class EnterAmountViewController: UIViewController, EnterAmountViewControllerProt
 
     func catchCuota(notification: Notification) {
         presenter.catchCuota(notification: notification)
+    }
+    
+    func setTextFieldWithRegexNumber(numberToUse: String) {
+        enterAmountTextField.text = numberToUse
     }
 
     @IBAction func nextButtonTapped(_ sender: Any) {

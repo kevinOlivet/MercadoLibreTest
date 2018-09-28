@@ -12,6 +12,7 @@ protocol EnterAmountRouterProtocol {
     func showPaymentMethod(amountEntered: Int)
     func showEnterAmountAlert()
     func showCatchCuotaAlert(finalMessage: String)
+    func showNumberToUseAlert(message: String)
 }
 
 class EnterAmountRouter: EnterAmountRouterProtocol {
@@ -46,6 +47,15 @@ class EnterAmountRouter: EnterAmountRouterProtocol {
                                     message: finalMessage,
                                     vc: view,
                                     actionBtnText: "Ok".localized())
+        }
+    }
+    
+    func showNumberToUseAlert(message: String) {
+        if let view = view {
+        Alerts.dismissableAlert(title: "Invalid number".localized(),
+                                message: message,
+                                vc: view,
+                                actionBtnText: "Ok".localized())
         }
     }
 }

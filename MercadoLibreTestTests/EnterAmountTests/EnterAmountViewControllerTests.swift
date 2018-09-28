@@ -48,8 +48,12 @@ class EnterAmountViewControllerTests: XCTestCase {
         XCTAssertTrue(mockPresenter.catchCuotaCalled)
     }
 
+    func testSetTextFieldWithRegexNumber() {
+        enterAmountViewController.setTextFieldWithRegexNumber(numberToUse: "25000")
+        XCTAssertEqual(enterAmountViewController.enterAmountTextField.text, "25000")
+    }
+
     func testNextButtonTapped() {
-        enterAmountViewController.enterAmountTextField = UITextField(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         enterAmountViewController.enterAmountTextField.text = "50000"
         enterAmountViewController.nextButtonTapped(UIButton())
         XCTAssertTrue(mockPresenter.handleNextButtonTappedCalled)
